@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Shalomville InnoTech Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex">
+                        <img src="../img/logo.jpg" alt="Logo" class="h-20">
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-yellow-700 text-lg">Shalomville InnoTech Academy</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="../index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Home</a>
+                    <a href="/pages/programs.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Programs</a>
+                    <a href="/pages/services.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Services</a>
+                    <a href="/pages/about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">About Us</a>
+                    <a href="/pages/contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Contact Us</a>
+                    <a href="/pages/register.html" class="py-2 px-4 bg-red-900 text-white font-semibold rounded-lg hover:bg-red-800 transition duration-300">Register</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Home</a></li>
+                <li><a href="pages/programs.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Programs</a></li>
+                <li><a href="pages/services.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Services</a></li>
+                <li><a href="pages/about.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">About Us</a></li>
+                <li><a href="pages/contact.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Contact Us</a></li>
+                <li><a href="pages/register.html" class="block text-sm px-2 py-4 text-white bg-yellow-600 font-semibold">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Registration Header -->
+    <div class="bg-red-900 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold mb-4">Register for a Program</h1>
+            <p class="text-xl max-w-2xl mx-auto">Start your journey to becoming a tech professional today</p>
+        </div>
+    </div>
+
+    <!-- Registration Form -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden border-t-4 border-yellow-600">
+                    <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+                        <h2 class="text-xl font-semibold text-red-900">Application Form</h2>
+                    </div>
+                    <form id="registrationForm" class="p-6 space-y-6">
+                        <!-- Personal Information -->
+                        <div>
+                            <h3 class="text-lg font-medium text-red-900 mb-4">Personal Information</h3>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="firstName" class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                                    <p class="mt-1 text-sm text-red-600 hidden" id="firstNameError">Please enter your first name</p>
+                                </div>
+                                <div>
+                                    <label for="lastName" class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                                    <p class="mt-1 text-sm text-red-600 hidden" id="lastNameError">Please enter your last name</p>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                                <p class="mt-1 text-sm text-red-600 hidden" id="emailError">Please enter a valid email address</p>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6 mt-6">
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                                    <p class="mt-1 text-sm text-red-600 hidden" id="phoneError">Please enter a valid phone number</p>
+                                </div>
+                                <div>
+                                    <label for="dob" class="block text-sm font-medium text-gray-700 mb-1">Date of Birth *</label>
+                                    <input type="date" id="dob" name="dob" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                                    <p class="mt-1 text-sm text-red-600 hidden" id="dobError">Please enter your date of birth</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Program Selection -->
+                        <div>
+                            <h3 class="text-lg font-medium text-red-900 mb-4">Program Selection</h3>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-3">Select Program *</label>
+                                <div class="space-y-3">
+                                    <div class="flex items-center">
+                                        <input id="frontend" name="program" type="radio" value="frontend" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500 border-gray-300" required>
+                                        <label for="frontend" class="ml-3 block text-sm font-medium text-gray-700">
+                                            Frontend Development with React(12 weeks) 
+                                        </label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input id="backend" name="program" type="radio" value="backend" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500 border-gray-300">
+                                        <label for="backend" class="ml-3 block text-sm font-medium text-gray-700">
+                                            Backend Development with Python(14 weeks)
+                                        </label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input id="backend" name="program" type="radio" value="backend" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500 border-gray-300">
+                                        <label for="backend" class="ml-3 block text-sm font-medium text-gray-700">
+                                            Backend Development with Java(14 weeks)
+                                        </label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input id="ml" name="program" type="radio" value="ml" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500 border-gray-300">
+                                        <label for="ml" class="ml-3 block text-sm font-medium text-gray-700">
+                                            Machine Learning with Python(16 weeks) 
+                                        </label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input id="design" name="program" type="radio" value="design" class="h-4 w-4 text-yellow-600 focus:ring-yellow-500 border-gray-300">
+                                        <label for="design" class="ml-3 block text-sm font-medium text-gray-700">
+                                            Cyber Security (10 weeks)
+                                        </label>
+                                    </div>
+                                </div>
+                                <p class="mt-1 text-sm text-red-600 hidden" id="programError">Please select a program</p>
+                            </div>
+                            <div class="mt-6">
+                                <label for="startDate" class="block text-sm font-medium text-gray-700 mb-1">Preferred Start Date *</label>
+                                <select id="startDate" name="startDate" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                                    <option value="">Select start date</option>
+                                    <option value="2025-06-01">June 1, 2025</option>
+                                    <option value="2025-07-15">July 15, 2025</option>
+                                    <option value="2025-09-05">September 5, 2025</option>
+                                    <option value="2025-10-20">October 20, 2025</option>
+                                </select>
+                                <p class="mt-1 text-sm text-red-600 hidden" id="startDateError">Please select a start date</p>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Background Information -->
+                        <div>
+                            <h3 class="text-lg font-medium text-red-900 mb-4">Background Information</h3>
+                            <div>
+                                <label for="experience" class="block text-sm font-medium text-gray-700 mb-1">Technical Experience Level *</label>
+                                <select id="experience" name="experience" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                                    <option value="">Select your experience level</option>
+                                    <option value="beginner">Beginner (No prior experience)</option>
+                                    <option value="some">Some experience (Self-taught or informal training)</option>
+                                    <option value="intermediate">Intermediate (Some formal education or work experience)</option>
+                                    <option value="advanced">Advanced (Looking to specialize further)</option>
+                                </select>
+                                <p class="mt-1 text-sm text-red-600 hidden" id="experienceError">Please select your experience level</p>
+                            </div>
+                            <div class="mt-6">
+                                <label for="education" class="block text-sm font-medium text-gray-700 mb-1">Highest Education Level *</label>
+                                <select id="education" name="education" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                                    <option value="">Select your education level</option>
+                                    <option value="highschool">High School Diploma</option>
+                                    <option value="somecollege">Some College</option>
+                                    <option value="associate">Associate Degree</option>
+                                    <option value="bachelor">Bachelor's Degree</option>
+                                    <option value="master">Master's Degree or Higher</option>
+                                </select>
+                                <p class="mt-1 text-sm text-red-600 hidden" id="educationError">Please select your education level</p>
+                            </div>
+                            <div class="mt-6">
+                                <label for="goals" class="block text-sm font-medium text-gray-700 mb-1">What are your career goals? *</label>
+                                <textarea id="goals" name="goals" rows="3" required
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-600"></textarea>
+                                <p class="mt-1 text-sm text-red-600 hidden" id="goalsError">Please describe your career goals</p>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                                <input id="terms" name="terms" type="checkbox" required
+                                    class="focus:ring-yellow-500 h-4 w-4 text-yellow-600 border-gray-300 rounded">
+                            </div>
+                            <div class="ml-3 text-sm">
+                                <label for="terms" class="font-medium text-gray-700">I agree to the <a href="#" class="text-yellow-600 hover:text-red-900">Terms and Conditions</a> *</label>
+                                <p class="text-gray-500">By checking this box, you agree to our enrollment terms and privacy policy.</p>
+                            </div>
+                        </div>
+                        <p class="mt-1 text-sm text-red-600 hidden" id="termsError">You must agree to the terms and conditions</p>
+
+                        <!-- Submit Button -->
+                        <div class="pt-6">
+                            <button type="submit" class="w-full bg-red-900 text-white py-3 px-6 rounded-md hover:bg-red-800 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-offset-2 font-medium transition duration-300">
+                                Submit Application
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal (hidden by default) -->
+    <div id="successModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center hidden z-50">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full p-6">
+            <div class="text-center">
+                <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 mb-4">
+                    <i class="fas fa-check text-green-600 text-xl"></i>
+                </div>
+                <h3 class="text-lg font-medium text-red-900 mb-2">Application Submitted!</h3>
+                <div class="mt-2 text-sm text-gray-500">
+                    <p>Thank you for your application to Shalomville InnoTech Academy. Our admissions team will review your information and contact you within 2 business days.</p>
+                </div>
+                <div class="mt-5">
+                    <button type="button" onclick="closeModal()"
+                        class="inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-yellow-600 text-base font-medium text-white hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 sm:text-sm">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-red-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Shalomville InnoTech Academy</h3>
+                    <p class="text-gray-300">Preparing your future through quality education and innovative technology training.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-yellow-400">Home</a></li>
+                        <li><a href="pages/programs.html" class="text-gray-300 hover:text-yellow-400">Programs</a></li>
+                        <li><a href="pages/services.html" class="text-gray-300 hover:text-yellow-400">Services</a></li>
+                        <li><a href="pages/about.html" class="text-gray-300 hover:text-yellow-400">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="text-gray-300">123 Tech Street</p>
+                    <p class="text-gray-300">Shalomville, SV 10001</p>
+                    <p class="text-gray-300">Email: info@shalomvilleinnotech.com</p>
+                    <p class="text-gray-300">Phone: (123) 456-7890</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-yellow-600 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Shalomville InnoTech Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/form-validation.js"></script>
+    <script>
+        function closeModal() {
+            document.getElementById('successModal').classList.add('hidden');
+            // Reset form
+            document.getElementById('registrationForm').reset();
+        }
+
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Form validation would go here
+            
+            // Show success modal
+            document.getElementById('successModal').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>

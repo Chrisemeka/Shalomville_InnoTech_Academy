@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shalomville InnoTech Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex">
+                        <img src="../img/logo.jpg" alt="Logo" class="h-20">
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-yellow-700 text-lg">Shalomville InnoTech Academy</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="../index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Home</a>
+                    <a href="/pages/programs.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Programs</a>
+                    <a href="/pages/services.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Services</a>
+                    <a href="/pages/about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">About Us</a>
+                    <a href="/pages/contact.html" class="py-4 px-2 text-yellow-600 border-b-4 border-yellow-600 font-semibold">Contact Us</a>
+                    <a href="/pages/register.html" class="py-2 px-4 bg-red-900 text-white font-semibold rounded-lg hover:bg-red-800 transition duration-300">Register</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Home</a></li>
+                <li><a href="pages/programs.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Programs</a></li>
+                <li><a href="pages/services.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Services</a></li>
+                <li><a href="pages/about.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">About Us</a></li>
+                <li><a href="pages/contact.html" class="block text-sm px-2 py-4 text-white bg-yellow-600 font-semibold">Contact Us</a></li>
+                <li><a href="pages/register.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <div class="bg-red-900 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+            <p class="text-xl max-w-2xl mx-auto">Have questions? We're here to help! Reach out to our team anytime.</p>
+        </div>
+    </div>
+
+    <!-- Contact Content -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-2xl font-bold text-red-900 mb-6">Send Us a Message</h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                                <option value="">Select a subject</option>
+                                <option value="admissions">Admissions Inquiry</option>
+                                <option value="courses">Course Information</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600"></textarea>
+                        </div>
+                        <button type="submit" class="bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-yellow-700 transition duration-300 w-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-2xl font-bold text-red-900 mb-6">Contact Information</h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-yellow-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-red-900 mb-1">Our Location</h3>
+                                <p class="text-gray-600">123 Tech Street<br>Shalomville, SV 10001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-yellow-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-red-900 mb-1">Email Us</h3>
+                                <p class="text-gray-600">info@shalomvilleinnotech.com<br>admissions@shalomvilleinnotech.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-yellow-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-red-900 mb-1">Call Us</h3>
+                                <p class="text-gray-600">+1 (123) 456-7890<br>Mon-Fri, 9am-5pm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12">
+                        <h3 class="text-xl font-semibold text-red-900 mb-4">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-yellow-100 text-yellow-600 p-3 rounded-full hover:bg-yellow-200 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-yellow-100 text-yellow-600 p-3 rounded-full hover:bg-yellow-200 transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-yellow-100 text-yellow-600 p-3 rounded-full hover:bg-yellow-200 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-yellow-100 text-yellow-600 p-3 rounded-full hover:bg-yellow-200 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="bg-yellow-100 text-yellow-600 p-3 rounded-full hover:bg-yellow-200 transition duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <div class="bg-green-900 bg-opacity-10 py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-center text-red-900 mb-8">Find Us on the Map</h2>
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <!-- Embedded Google Map -->
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127834.4864473773!2d7.363570858088569!3d9.057851017179496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a49f10b2933%3A0xb3d4b190b0c2ad90!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1714463370702!5m2!1sen!2sng"  
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-red-900 mb-12">Frequently Asked Questions</h2>
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                            <h3 class="text-lg font-semibold text-left text-red-900">What are the admission requirements?</h3>
+                            <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-600">Our programs are open to anyone with basic computer skills and a passion for learning. Some advanced programs may require prior knowledge, which will be clearly stated in the program description.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                            <h3 class="text-lg font-semibold text-left text-red-900">Do you offer financial aid or payment plans?</h3>
+                            <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-600">Yes, we offer several payment options including installment plans and scholarships for qualified students. Please contact our admissions team for more information about available financial assistance.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-question w-full flex justify-between items-center p-4 bg-gray-50 hover:bg-gray-100 transition duration-300">
+                            <h3 class="text-lg font-semibold text-left text-red-900">What kind of support do you offer after graduation?</h3>
+                            <i class="fas fa-chevron-down text-yellow-600 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer p-4 border-t border-gray-200 hidden">
+                            <p class="text-gray-600">We provide career services including resume reviews, interview preparation, and job placement assistance. Our alumni also get access to exclusive networking events and continued learning resources.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-red-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Shalomville InnoTech Academy</h3>
+                    <p class="text-gray-300">Preparing your future through quality education and innovative technology training.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-yellow-400">Home</a></li>
+                        <li><a href="pages/programs.html" class="text-gray-300 hover:text-yellow-400">Programs</a></li>
+                        <li><a href="pages/services.html" class="text-gray-300 hover:text-yellow-400">Services</a></li>
+                        <li><a href="pages/about.html" class="text-gray-300 hover:text-yellow-400">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="text-gray-300">123 Tech Street</p>
+                    <p class="text-gray-300">Shalomville, SV 10001</p>
+                    <p class="text-gray-300">Email: info@shalomvilleinnotech.com</p>
+                    <p class="text-gray-300">Phone: (123) 456-7890</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-yellow-600 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Shalomville InnoTech Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript/main.js"></script>
+    <script>
+        // FAQ functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                icon.classList.toggle('transform');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+    </script>
+</body>
+</html>

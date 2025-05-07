@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Programs - Shalomville InnoTech Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex">
+                        <img src="../img/logo.jpg" alt="Logo" class="h-20">
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                            <span class="font-semibold text-yellow-700 text-lg">Shalomville InnoTech Academy</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="../index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Home</a>
+                    <a href="/pages/programs.html" class="py-4 px-2 text-yellow-600 border-b-4 border-yellow-600 font-semibold">Programs</a>
+                    <a href="/pages/services.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Services</a>
+                    <a href="/pages/about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">About Us</a>
+                    <a href="/pages/contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Contact Us</a>
+                    <a href="/pages/register.html" class="py-2 px-4 bg-red-900 text-white font-semibold rounded-lg hover:bg-red-800 transition duration-300">Register</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Home</a></li>
+                <li><a href="pages/programs.html" class="block text-sm px-2 py-4 text-white bg-yellow-600 font-semibold">Programs</a></li>
+                <li><a href="pages/services.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Services</a></li>
+                <li><a href="pages/about.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">About Us</a></li>
+                <li><a href="pages/contact.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Contact Us</a></li>
+                <li><a href="pages/register.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Programs Header -->
+    <div class="bg-red-900 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold mb-4">Our Training Programs</h1>
+            <p class="text-xl max-w-2xl mx-auto">Comprehensive courses designed to take you from beginner to job-ready professional</p>
+        </div>
+    </div>
+
+    <!-- Programs Details -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Frontend Development -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md border-t-4 border-yellow-600">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-laptop-code text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-red-900">Frontend Development with React</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Learn to build beautiful, interactive user interfaces with modern technologies.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>React</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>React Components</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>React Hooks</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>React Router</span>
+                        </li>
+                    </ul>
+                    <a href="courses.html?program=frontend" class="text-yellow-600 font-semibold hover:text-red-900">View Full Curriculum →</a>
+                </div>
+
+                <!-- Backend Development with python-->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md border-t-4 border-yellow-600">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-server text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-red-900">Backend Development with Python</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Master server-side programming, databases, and API development.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>Node.js & Express</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>Python & Django</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>SQL & NoSQL Databases</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>RESTful API Design</span>
+                        </li>
+                    </ul>
+                    <a href="courses.html?program=backend_python" class="text-yellow-600 font-semibold hover:text-red-900">View Full Curriculum →</a>
+                </div>
+
+                <!-- Backend Development with java-->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md border-t-4 border-yellow-600">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-server text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-red-900">Backend Development with Java</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Master server-side programming, databases, and API development.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>Java & Spring Boot</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>JavaServer Pages (JSP) & Servlets</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>MySQL & MongoDB</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>RESTful API Development</span>
+                        </li>
+                    </ul>
+                    <a href="courses.html?program=backend_java" class="text-yellow-600 font-semibold hover:text-red-900">View Full Curriculum →</a>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md border-t-4 border-yellow-600">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-robot text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-red-900">Machine Learning with Python</h2>
+                    </div>
+                    <p class="text-gray-600 mb-6">Dive into artificial intelligence, data science, and predictive modeling.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>Python for Data Science</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>TensorFlow & PyTorch</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>Neural Networks & Deep Learning</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>Data Visualization</span>
+                        </li>
+                    </ul>
+                    <a href="courses.html?program=ml" class="text-yellow-600 font-semibold hover:text-red-900">View Full Curriculum →</a>
+                </div>
+
+                <!-- CyberSecurity-->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md border-t-4 border-yellow-600">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-lock text-yellow-600 text-2xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-red-900">CyberSecurity</h2> 
+                    </div>
+                    <p class="text-gray-600 mb-6">Protect digital assets and master essential cybersecurity tools and practices.</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>Network Security & Firewalls</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>Ethical Hacking & Penetration Testing</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>Security Information & Event Management (SIEM)</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-yellow-600 mr-2"></i>
+                            <span>Risk Assessment & Vulnerability Management</span>
+                        </li>
+                    </ul>
+                    <a href="courses.html?program=cybersecurity" class="text-yellow-600 font-semibold hover:text-red-900">View Full Curriculum →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Comparison -->
+    <section class="py-12 bg-green-900 bg-opacity-10">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-red-900 mb-12">Program Comparison</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white rounded-lg overflow-hidden">
+                    <thead class="bg-red-900 text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left">Feature</th>
+                            <th class="py-3 px-4 text-left">Frontend</th>
+                            <th class="py-3 px-4 text-left">Backend</th>
+                            <th class="py-3 px-4 text-left">ML</th>
+                            <th class="py-3 px-4 text-left">CyberSecurity</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-700">
+                        <tr class="bg-gray-50">
+                            <td class="py-3 px-4">Duration</td>
+                            <td class="py-3 px-4">12 weeks</td>
+                            <td class="py-3 px-4">14 weeks</td>
+                            <td class="py-3 px-4">16 weeks</td>
+                            <td class="py-3 px-4">10 weeks</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">Prerequisites</td>
+                            <td class="py-3 px-4">Basic computer skills</td>
+                            <td class="py-3 px-4">Programming basics</td>
+                            <td class="py-3 px-4">Math fundamentals</td>
+                            <td class="py-3 px-4">Networking Fundamentals</td>
+                        </tr>
+                        <tr class="bg-gray-50">
+                            <td class="py-3 px-4">Projects</td>
+                            <td class="py-3 px-4">5</td>
+                            <td class="py-3 px-4">4</td>
+                            <td class="py-3 px-4">3</td>
+                            <td class="py-3 px-4">6</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4">Career Path</td>
+                            <td class="py-3 px-4">Frontend Developer</td>
+                            <td class="py-3 px-4">Backend Developer</td>
+                            <td class="py-3 px-4">ML Engineer</td>
+                            <td class="py-3 px-4">CyberSecurity Expert</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-red-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Shalomville InnoTech Academy</h3>
+                    <p class="text-gray-300">Preparing your future through quality education and innovative technology training.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-yellow-400">Home</a></li>
+                        <li><a href="pages/programs.html" class="text-gray-300 hover:text-yellow-400">Programs</a></li>
+                        <li><a href="pages/services.html" class="text-gray-300 hover:text-yellow-400">Services</a></li>
+                        <li><a href="pages/about.html" class="text-gray-300 hover:text-yellow-400">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="text-gray-300">123 Tech Street</p>
+                    <p class="text-gray-300">Shalomville, SV 10001</p>
+                    <p class="text-gray-300">Email: info@shalomvilleinnotech.com</p>
+                    <p class="text-gray-300">Phone: (123) 456-7890</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-yellow-600 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Shalomville InnoTech Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../javascript/main.js"></script>
+</body>
+</html>

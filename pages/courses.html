@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - Shalomville InnoTech Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../javascript/main.js"></script>
+</head>
+<body class="font-sans bg-gray-50">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div class="flex space-x-7">
+                        <div class="flex">
+                            <img src="../img/logo.jpg" alt="Logo" class="h-20">
+                            <a href="index.html" class="flex items-center py-4 px-2">
+                                <span class="font-semibold text-yellow-700 text-lg">Shalomville InnoTech Academy</span>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="../index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Home</a>
+                    <a href="/pages/programs.html" class="py-4 px-2 text-yellow-600 border-b-4 border-yellow-600 font-semibold">Programs</a>
+                    <a href="/pages/services.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Services</a>
+                    <a href="/pages/about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">About Us</a>
+                    <a href="/pages/contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-yellow-600 transition duration-300">Contact Us</a>
+                    <a href="/pages/register.html" class="py-2 px-4 bg-red-900 text-white font-semibold rounded-lg hover:bg-red-800 transition duration-300">Register</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-500 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul>
+                <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Home</a></li>
+                <li><a href="pages/programs.html" class="block text-sm px-2 py-4 text-white bg-yellow-600 font-semibold">Programs</a></li>
+                <li><a href="pages/services.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Services</a></li>
+                <li><a href="pages/about.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">About Us</a></li>
+                <li><a href="pages/contact.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Contact Us</a></li>
+                <li><a href="pages/register.html" class="block text-sm px-2 py-4 hover:bg-yellow-600 hover:text-white transition duration-300">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dynamic Content Based on Program -->
+    <div id="program-content" class="py-16">
+        <!-- Content will be loaded by JavaScript based on URL parameter -->
+        <div class="container mx-auto px-6 text-center">
+            <div class="animate-pulse">
+                <div class="h-8 bg-gray-300 rounded w-1/4 mx-auto mb-4"></div>
+                <div class="h-4 bg-gray-300 rounded w-1/2 mx-auto mb-8"></div>
+                <div class="h-64 bg-gray-300 rounded"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-red-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Shalomville InnoTech Academy</h3>
+                    <p class="text-gray-300">Preparing your future through quality education and innovative technology training.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-yellow-400">Home</a></li>
+                        <li><a href="pages/programs.html" class="text-gray-300 hover:text-yellow-400">Programs</a></li>
+                        <li><a href="pages/services.html" class="text-gray-300 hover:text-yellow-400">Services</a></li>
+                        <li><a href="pages/about.html" class="text-gray-300 hover:text-yellow-400">About Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact</h3>
+                    <p class="text-gray-300">123 Tech Street</p>
+                    <p class="text-gray-300">Shalomville, SV 10001</p>
+                    <p class="text-gray-300">Email: info@shalomvilleinnotech.com</p>
+                    <p class="text-gray-300">Phone: (123) 456-7890</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-yellow-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-yellow-600 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Shalomville InnoTech Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get program from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const program = urlParams.get('program');
+            
+            // Define course data for each program
+            const programs = {
+                'frontend': {
+                    title: 'Frontend Development with React',
+                    icon: 'laptop-code',
+                    description: 'Master the tools and technologies to build modern, interactive user interfaces for the web.',
+                    modules: [
+                        {
+                            title: 'HTML5 & CSS3 Fundamentals',
+                            weeks: 3,
+                            topics: ['Semantic HTML', 'CSS Selectors', 'Box Model', 'Flexbox', 'Grid Layout']
+                        },
+                        {
+                            title: 'JavaScript Essentials',
+                            weeks: 4,
+                            topics: ['Variables & Data Types', 'Functions', 'DOM Manipulation', 'Events', 'ES6+ Features']
+                        },
+                        {
+                            title: 'Responsive Design',
+                            weeks: 2,
+                            topics: ['Media Queries', 'Mobile-first Approach', 'Accessibility', 'Cross-browser Compatibility']
+                        },
+                        {
+                            title: 'React.js Framework',
+                            weeks: 3,
+                            topics: ['Components & Props', 'State Management', 'Hooks', 'Routing', 'API Integration']
+                        }
+                    ]
+                },
+                'backend_java': {
+                    title: 'Backend Development with Java',
+                    icon: 'server',
+                    description: 'Learn to build robust server-side applications using Java, Spring Boot, and relational databases.',
+                    modules: [
+                        {
+                            title: 'Java Fundamentals',
+                            weeks: 3,
+                            topics: ['OOP Concepts', 'JVM & JDK', 'Data Structures', 'Exception Handling', 'Collections']
+                        },
+                        {
+                            title: 'Spring Boot & REST APIs',
+                            weeks: 4,
+                            topics: ['Spring Boot Basics', 'RESTful Services', 'Controllers', 'Dependency Injection', 'Validation']
+                        },
+                        {
+                            title: 'Database Integration',
+                            weeks: 3,
+                            topics: ['JPA & Hibernate', 'MySQL/PostgreSQL', 'Entity Mapping', 'CRUD Operations', 'Joins']
+                        },
+                        {
+                            title: 'Security & Deployment',
+                            weeks: 3,
+                            topics: ['Spring Security', 'Authentication & Authorization', 'JWT', 'Docker', 'CI/CD Pipelines']
+                        }
+                    ]
+                },
+                'backend_python': {
+                    title: 'Backend Development with Python',
+                    icon: 'server',
+                    description: 'Learn to build scalable backend systems using Python and Django, including database and API handling.',
+                    modules: [
+                        {
+                            title: 'Python Programming',
+                            weeks: 3,
+                            topics: ['Variables', 'Functions', 'File Handling', 'OOP in Python', 'Modules']
+                        },
+                        {
+                            title: 'Django Framework',
+                            weeks: 4,
+                            topics: ['MVC Pattern', 'Views & Templates', 'Models', 'Admin Interface', 'Migrations']
+                        },
+                        {
+                            title: 'Database Systems',
+                            weeks: 3,
+                            topics: ['SQLite/MySQL', 'Django ORM', 'Querysets', 'Relations', 'Data Validation']
+                        },
+                        {
+                            title: 'RESTful APIs & Deployment',
+                            weeks: 3,
+                            topics: ['Django REST Framework', 'Token Authentication', 'API Testing', 'Docker', 'Heroku Deployment']
+                        }
+                    ]
+                },
+                'ml': {
+                    title: 'Machine Learning',
+                    icon: 'robot',
+                    description: 'Dive into artificial intelligence, data science, and predictive modeling with Python.',
+                    modules: [
+                        {
+                            title: 'Python for Data Science',
+                            weeks: 3,
+                            topics: ['NumPy', 'Pandas', 'Matplotlib', 'Data Cleaning', 'Exploratory Analysis']
+                        },
+                        {
+                            title: 'Machine Learning Fundamentals',
+                            weeks: 5,
+                            topics: ['Supervised Learning', 'Unsupervised Learning', 'Model Evaluation', 'Feature Engineering', 'Hyperparameter Tuning']
+                        },
+                        {
+                            title: 'Deep Learning',
+                            weeks: 4,
+                            topics: ['Neural Networks', 'TensorFlow/Keras', 'CNNs', 'RNNs', 'Transfer Learning']
+                        },
+                        {
+                            title: 'Real-world Applications',
+                            weeks: 4,
+                            topics: ['NLP', 'Computer Vision', 'Time Series', 'Model Deployment', 'Ethics in AI']
+                        }
+                    ]
+                },
+                'cybersecurity': {
+                    title: 'Cybersecurity',
+                    icon: 'lock',
+                    description: 'Gain the skills to protect systems, networks, and data from cyber threats and attacks.',
+                    modules: [
+                        {
+                            title: 'Networking & Security Basics',
+                            weeks: 3,
+                            topics: ['TCP/IP', 'Firewalls', 'OSI Model', 'Ports & Protocols', 'VPNs']
+                        },
+                        {
+                            title: 'Ethical Hacking & Pen Testing',
+                            weeks: 4,
+                            topics: ['Footprinting', 'Scanning', 'Exploitation Techniques', 'Metasploit', 'Reporting']
+                        },
+                        {
+                            title: 'Security Tools & Techniques',
+                            weeks: 3,
+                            topics: ['Wireshark', 'Nmap', 'Kali Linux Tools', 'Password Cracking', 'Vulnerability Scanning']
+                        },
+                        {
+                            title: 'Incident Response & Risk Management',
+                            weeks: 3,
+                            topics: ['Threat Modeling', 'Security Policies', 'SIEM Tools', 'Risk Assessment', 'Disaster Recovery']
+                        }
+                    ]
+                }
+            };
+
+
+            // Get the selected program or default to frontend
+            const selectedProgram = programs[program] || programs['frontend'];
+            
+            // Render the program content
+            const contentDiv = document.getElementById('program-content');
+            contentDiv.innerHTML = `
+                <div class="bg-red-900 text-white py-16">
+                    <div class="container mx-auto px-6 text-center">
+                        <div class="bg-white bg-opacity-20 inline-flex p-4 rounded-full mb-6">
+                            <i class="fas fa-${selectedProgram.icon} text-3xl"></i>
+                        </div>
+                        <h1 class="text-4xl font-bold mb-4">${selectedProgram.title}</h1>
+                        <p class="text-xl max-w-2xl mx-auto">${selectedProgram.description}</p>
+                    </div>
+                </div>
+
+                <section class="py-12 bg-white">
+                    <div class="container mx-auto px-6">
+                        <h2 class="text-3xl font-bold text-center text-red-900 mb-12">Course Curriculum</h2>
+                        
+                        <div class="max-w-4xl mx-auto">
+                            ${selectedProgram.modules.map((module, index) => `
+                                <div class="mb-12">
+                                    <div class="flex items-center mb-6">
+                                        <div class="bg-yellow-100 text-yellow-600 font-bold rounded-full h-10 w-10 flex items-center justify-center mr-4">${index + 1}</div>
+                                        <h3 class="text-2xl font-semibold text-red-900">${module.title} <span class="text-gray-500 text-lg">(${module.weeks} week${module.weeks > 1 ? 's' : ''})</span></h3>
+                                    </div>
+                                    <div class="grid md:grid-cols-2 gap-4 pl-14">
+                                        ${module.topics.map(topic => `
+                                            <div class="bg-gray-50 p-4 rounded-lg flex items-center">
+                                                <i class="fas fa-check-circle text-yellow-600 mr-3"></i>
+                                                <span>${topic}</span>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </section>
+
+                <section class="py-12 bg-green-900 bg-opacity-10">
+                    <div class="container mx-auto px-6 text-center">
+                        <h2 class="text-3xl font-bold text-red-900 mb-6">Ready to Start Your ${selectedProgram.title} Journey?</h2>
+                        <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Join our next cohort and gain hands-on experience with expert instructors.</p>
+                        <a href="../register.html" class="bg-yellow-600 text-white font-bold py-3 px-8 rounded-full hover:bg-yellow-700 transition duration-300">Enroll Now</a>
+                    </div>
+                </section>
+            `;
+        });
+    </script>
+</body>
+</html>
