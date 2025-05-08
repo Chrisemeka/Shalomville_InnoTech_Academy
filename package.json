@@ -1,17 +1,16 @@
 {
-  "name": "training-school",
+  "name": "shalomville-academy-email",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Simple email functionality for Shalomville InnoTech Academy",
+  "main": "server.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/styles.css -o ./dist/output.css"
-  },
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.4.17"
+    "start": "node server.js"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.5"
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "nodemailer": "^6.9.12"
   }
 }

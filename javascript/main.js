@@ -18,16 +18,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Function to show success modal (used in registration form)
-function showModal() {
-    const modal = document.getElementById('successModal');
-    modal.classList.remove('hidden');
-}
 
-// Function to close success modal
-function closeModal() {
-    const modal = document.getElementById('successModal');
-    modal.classList.add('hidden');
-    // Redirect to home page after closing modal
-    window.location.href = '../index.html';
-}
+
