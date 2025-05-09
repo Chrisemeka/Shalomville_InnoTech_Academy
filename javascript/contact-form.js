@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     
-    // First, let's create a success modal if it doesn't exist
+
     if (!document.getElementById('contactSuccessModal')) {
         const modal = document.createElement('div');
         modal.id = 'contactSuccessModal';
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         document.body.appendChild(modal);
         
-        // Add the close modal function
+      
         window.closeContactModal = function() {
             document.getElementById('contactSuccessModal').classList.add('hidden');
         };
@@ -49,14 +49,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Change button to loading state
+           
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
             submitBtn.textContent = 'Sending...';
             submitBtn.disabled = true;
             
-            // Send data to server
-            fetch('http://localhost:3000/api/contact', {
+          
+            const backendUrl = 'https://shalomville-mail-server.onrender.com/api/contact';
+            
+            
+            fetch(backendUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -119,21 +122,21 @@ document.addEventListener('DOMContentLoaded', function() {
             
             errorContainer.appendChild(closeButton);
             
-            // Create message span
+           
             const messageSpan = document.createElement('span');
             messageSpan.className = 'block sm:inline';
             messageSpan.id = 'errorMessage';
             errorContainer.appendChild(messageSpan);
             
-            // Insert at the top of the form
+            
             contactForm.insertBefore(errorContainer, contactForm.firstChild);
         }
         
-        // Update message and show
+        
         document.getElementById('errorMessage').textContent = message;
         errorContainer.classList.remove('hidden');
         
-        // Scroll to error
+        
         errorContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
 });

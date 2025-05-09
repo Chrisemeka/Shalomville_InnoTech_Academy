@@ -5,28 +5,29 @@ document.addEventListener('DOMContentLoaded', function() {
         registrationForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Reset error messages
+            
             resetErrors();
             
-            // Validate form fields
+        
             const isValid = validateForm();
             
             if (isValid) {
-                // Get all form data
                 const formData = new FormData(registrationForm);
                 const formObject = {};
                 formData.forEach((value, key) => {
                     formObject[key] = value;
                 });
                 
-                // Change button to loading state
+                
                 const submitBtn = registrationForm.querySelector('button[type="submit"]');
                 const originalText = submitBtn.textContent;
                 submitBtn.textContent = 'Submitting...';
                 submitBtn.disabled = true;
                 
-                // Send data to server
-                fetch('http://localhost:3000/api/register', {
+                
+                const backendUrl = 'https://shalomville-mail-server.onrender.com/api/register';
+                
+                fetch(backendUrl, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -42,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         alert('Failed to submit registration: ' + (data.message || 'Please try again.'));
                     }
                     
-                    // Reset button state
+                   
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
                 })
@@ -50,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.error('Error:', error);
                     alert('An error occurred. Please try again later.');
                     
-                    // Reset button state
+                   
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
                 });
